@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/all"
+
+            >
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="440dp"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/bmapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true" />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_tea_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/et_stu_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:text="获取并提交验证码（学生）"
+
+            android:visibility="gone"
+            android:id="@+id/btn_stu_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/all"
+            />
+
+        <Button
+            android:visibility="gone"
+            android:text="获取并提交验证码(老师)"
+
+            android:id="@+id/btn_tea_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/all"
+            />
+        <TextView
+            android:id="@+id/textDDH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2389016249781264"
+            android:textColor="#3399FF" />
+
+        <Button
+            android:id="@+id/my_positionDDH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textDDH"
+            android:layout_alignBottom="@+id/textDDH"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="我的位置" />
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
